@@ -1,0 +1,9 @@
+node_modules
+docker
+dist
+.idea
+.env
+
+src/swagger.json
+src/routes
+coverage

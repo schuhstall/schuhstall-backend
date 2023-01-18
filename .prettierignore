@@ -1,0 +1,3 @@
+# Ignore those files:
+**/.swagger.json
+**/.routes.ts

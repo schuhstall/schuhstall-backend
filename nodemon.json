@@ -1,0 +1,12 @@
+{
+  "watch": [
+    "src"
+  ],
+  "exec": "tsoa spec-and-routes && tsc && cross-env NODE_ENV=development node dist/server.js",
+  "ignore": [
+    "src/**/*spec.ts",
+    "src/swagger.json",
+    "src/routes/routes.ts"
+  ],
+  "ext": "ts"
+}

@@ -1,0 +1,42 @@
+{
+  "entryFile": "src/server.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": [
+    "src/**/*.controller.ts"
+  ],
+  "spec": {
+    "outputDirectory": "src",
+    "specVersion": 3,
+    "securityDefinitions": {
+      "signature": {
+        "type": "http",
+        "scheme": "basic"
+      }
+    },
+    "spec": {
+      "info": {
+        "title": "Schuhstall Backend",
+        "version": "0.0.1",
+        "contact": {
+          "email": "info@example.com",
+          "name": "Example",
+          "url": "https://example.com"
+        }
+      },
+      "servers": [
+        {
+          "url": "http://localhost:8099",
+          "description": "Local Backend"
+        },
+        {
+          "url": "https://api-dev.example.com",
+          "description": "Dev Backend"
+        }
+      ]
+    }
+  },
+  "routes": {
+    "routesDir": "src/routes",
+    "authenticationModule": "src/security/authentication.ts"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "setupFiles": ["<rootDir>config.ts", "dotenv/config"],
+  "transform": {
+    ".(ts|tsx)": "ts-jest"
+  },
+  "moduleFileExtensions": ["ts", "tsx", "js", "json"],
+  "globals": {
+    "ts-jest": {
+      "compiler": "ttypescript"
+    }
+  },
+  "coveragePathIgnorePatterns": [
+    "/src/clients/",
+    "/src/tests/fixtures",
+    "/src/helpers/paddString.ts",
+    "/src/services/notification.service.ts",
+    "/src/prisma",
+    "node_modules"
+  ],
+  "coverageReporters": ["json-summary"]
+}
